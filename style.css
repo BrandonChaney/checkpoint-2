@@ -15,12 +15,13 @@
 }
 
 .flexbox-item {
-  border: 3px solid black;
+  
   background-color: coral;
 }
 
 .flexbox-item-1 {
   min-width: 28%;
+  border: 1px solid black;
 }
 
 
@@ -29,7 +30,9 @@
   
 }
 
-
+.flexbox-3 {
+  border: 1px solid black;
+}
 
 
 
