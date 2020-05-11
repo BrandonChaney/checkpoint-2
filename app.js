@@ -10,21 +10,6 @@ var items = {
   echo: { price: 1000, quantity: 0, multiplier: 10 },
 }
 
-var collectAutoUpgrades = [
-  {
-    name: "timmy",
-    price: 600,
-    quantity: 0,
-    multiplier: 20
-  },
-  {
-    name: "honeyBadger",
-    price: 10000,
-    quantity: 0,
-    multiplier: 50
-  }
-]
-
 var autoItems = {
   timmy: { price: 600, quantity: 0, multiplier: 20 },
   honeyBadger: { price: 10000, quantity: 0, multiplier: 50 },
