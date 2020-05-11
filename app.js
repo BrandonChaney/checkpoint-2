@@ -40,7 +40,7 @@ function mine() {
   player.cheese += player.cheesePerClick;
   update()
 }
-
+// I should be able to make his into one function instead of 5. Is this where a for loop would come in?
 function upgradeCost() {
   if (items.fire.quantity > 0) {
     items.fire.price * items.fire.quantity;
@@ -75,7 +75,7 @@ function upgradeCost4() {
     update()
   }
 }
-
+//Same thing only one function should be needed for this or could one function do all 10? I was really proud of this function, it worked better than what I had planned
 function clickPerItem() {
   if (items.fire.multiplier > 0) {
     (items.fire.multiplier * items.fire.quantity);
@@ -182,14 +182,13 @@ function honeyBadger() {
   }
 }
 
-if (player.cheese <= 10000) {
-  setInterval(timmy, 3000)
-}
+//this was originally an if statement, it works with out brackets, Do I need them?
 
-if (player.cheese <= 10000) {
-  setInterval(honeyBadger, 3000)
-}
+{ setInterval(timmy, 3000) }
 
+{ setInterval(honeyBadger, 5000) }
+
+//Another one that can probably really be cleaned up. Do I really need to add update to all of my functions?
 
 function update() {
   document.getElementById("cheese").innerText = player.cheese.toString();
