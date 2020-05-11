@@ -1,0 +1,80 @@
+*{
+  font-family: 'Modak', cursive;
+  
+  
+
+}
+
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-item {
+  border: 3px solid black;
+  background-color: coral;
+}
+
+.flexbox-item-1 {
+  min-width: 28%;
+}
+
+
+.flexbox-item-2 {
+  max-height: 35vmax;
+  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .tabs {
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    
+  }
+}
+
+
+
+ @media only screen and (min-width: 576px) {
+  .spill-out {
+    position: absolute;
+    top: -2%;
+    
+     }
+
+    }
+    @media screen and (max-width: 768px){
+      .flexbox-container {
+        flex-wrap: wrap;
+      }
+      .flexbox-item-1 {
+        order: 1;
+        
+      }
+      
+      .flexbox-item-2 {
+        order: 3;
+      }
+      
+      .flexbox-item-3 {
+        order: 2;
+      }
+    }
+
+
+
+
+  

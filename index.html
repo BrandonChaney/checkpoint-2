@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkpoint 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <head>
+    <h1 class="container-fluid text-center">Mining Game</h1>
+
+  </head>
+
+  <main>
+
+    <div class="flexbox-container">
+      <div class="flexbox-item flexbox-item-1">
+        <h5 class="card-title text-center">Stats</h5>
+        <div class="text-center col">
+        </div>
+        <div class="text-center col">
+          <span>Fire: <span id="firecount">--</span></span>
+        </div>
+        <div class="text-center col">
+          <span>Dixie: <span id="dixiecount">--</span></span>
+        </div>
+        <div class="text-center col">
+          <span>Echo: <span id="echocount">--</span></span>
+        </div>
+        <div class="text-center col">
+          <span>Timmy: <span id="timmycount">--</span></span>
+        </div>
+        <div class="text-center col">
+          <span>Badger: <span id="honeybadgercount">--</span></span>
+        </div>
+      </div>
+      <div class="flexbox-item flexbox-item-2" onclick="mine()">
+        <img src="mryuck.img" class="card-img-top" alt="Tim on a bad day">
+      </div>
+      <div class="flexbox-item flexbox-item-1">
+        <div class="card-body">
+          <h5 class="card-title">Inventory</h5>
+          <div class="col-4">
+
+          </div>
+          <div>
+            <span>Cheese: <span id="cheese">--</span></span>
+          </div>
+          <div>
+            <span>Fire: <span id="Fire">--</span></span>
+          </div>
+          <div>
+            <span>Dixie: <span id="Dixie">--</span></span>
+          </div>
+          <div>
+            <span>Echo: <span id="Echo">--</span></span>
+          </div>
+          <div>
+            <span>Timmy: <span id="Timmy">--</span></span>
+          </div>
+          <div>
+            <span>Badger: <span id="HoneyBadger">--</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Store Upgrades</h5>
+            <div class=row>
+              <div class=col-4>
+                <button class="btn btn-danger spill-out" onclick="fire()">Fire </button-btn-primary>
+                  <span><span id="fireupgrade">--</span></span>
+                  <div class="row pl-2">
+                    <span><span> +2 Clicks</span></span>
+                  </div>
+              </div>
+              <div class=col-4>
+                <button class="btn btn-primary" onclick="dixie()">Dixie </button-btn-primary><span><span
+                      id="dixieupgrade"></span></span>
+                  <div class="row pl-3">
+                    <span><span> +5 Clicks</span></span>
+                  </div>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-dark" onclick="echo()">Echo </button-btn-primary><span><span
+                      id="echoupgrade"></span></span>
+                  <div class="row pl-3">
+                    <span><span> +10 Clicks</span></span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Auto Upgrades</h5>
+            <div class=row>
+              <div class=col-6>
+                <button class="btn btn-success" onclick="timmy()">Timmy</button-btn-primary>
+                  <span><span id="timmyupgrade">--</span></span>
+                  <div class="row pl-2">
+                    <span><span> +20 Clicks</span></span>
+                  </div>
+              </div>
+              <div class=col-6>
+                <button class="btn btn-warning" onclick="honeyBadger()">Badger</button-btn-primary>
+                  <span><span id="honeybadgerupgrade">--</span></span>
+                  <div class="row pl-2">
+                    <span><span> +50 Clicks</span></span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/bf27758a74.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
