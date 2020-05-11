@@ -9,6 +9,7 @@
 .flexbox-container {
   display: flex;
   flex-direction: row;
+  padding: 10px;
   
   justify-content: center;
   align-items: center;
@@ -22,6 +23,7 @@
 .flexbox-item-1 {
   min-width: 28%;
   border: 1px solid black;
+  
 }
 
 
@@ -32,6 +34,7 @@
 
 .flexbox-3 {
   border: 1px solid black;
+ 
 }
 
 
