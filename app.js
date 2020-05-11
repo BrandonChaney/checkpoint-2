@@ -25,13 +25,10 @@ var collectAutoUpgrades = [
   }
 ]
 
-
 var autoItems = {
   timmy: { price: 600, quantity: 0, multiplier: 20 },
   honeyBadger: { price: 10000, quantity: 0, multiplier: 50 },
 }
-
-
 
 function mine() {
   player.cheese += player.cheesePerClick;
@@ -50,7 +47,6 @@ function buyItems(name) {
     items[name].quantity++;
     player.cheesePerClick += items[name].multiplier;
     items[name].price *= 2;
-
     update()
   }
 }
@@ -62,16 +58,9 @@ function buyAuto(name) {
     autoItems[name].quantity++;
     player.autoClicks += autoItems[name].multiplier;
     autoItems[name].price *= 2;
-
     update()
   }
 }
-
-
-
-
-
-//Another one that can probably really be cleaned up. Do I really need to add update to all of my functions?
 
 function update() {
   document.getElementById("cheese").innerText = player.cheese.toString();
@@ -91,11 +80,6 @@ function update() {
   document.getElementById('timmycount').innerHTML = "(Level " + autoItems.timmy.quantity + ") clicks: " + autoItems.timmy.multiplier * autoItems.timmy.quantity;
   document.getElementById('honeybadgercount').innerHTML = "(Level " + autoItems.honeyBadger.quantity + ") clicks: " + autoItems.honeyBadger.multiplier * autoItems.honeyBadger.quantity;
 }
-
-
-
-
-
 
 update()
 
